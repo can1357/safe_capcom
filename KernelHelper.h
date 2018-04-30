@@ -53,6 +53,9 @@ NON_PAGED_CODE static uint64_t Khk_CallPassive( PVOID Ptr, Params &&... params )
 
 static void Khu_Init( CapcomContext* CpCtx, KernelContext* KrCtx )
 {
+	if ( Khk_PassiveCallStub )
+		return;
+
 	int CpuInfo[ 4 ];
 	__cpuid( CpuInfo, 0x7 );
 	

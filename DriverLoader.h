@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <string>
 #include <Shlwapi.h>
+#include <iostream>
 #include "NtDefines.h"
 #pragma comment(lib, "Shlwapi.lib")
 

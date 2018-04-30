@@ -1,9 +1,11 @@
 #pragma once
+#include <filesystem>
+#include <iostream>
+#include <fstream>
+
 #include "CapcomResource.h"
 #include "DriverLoader.h"
 #include "LockedMemory.h"
-#include <filesystem>
-#include <fstream>
 
 #define IOCTL_RunPayload64 0xAA013044
 

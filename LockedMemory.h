@@ -1,5 +1,6 @@
 #pragma once
 #include <Windows.h>
+#include <iostream>
 #include "NtDefines.h"
 
 #pragma section(".LDATA", read, write)

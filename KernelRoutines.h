@@ -1,6 +1,7 @@
 #pragma once
 #include <Windows.h>
 #include <inttypes.h>
+#include <iostream>
 #include <vector>
 #include "NtDefines.h"
 

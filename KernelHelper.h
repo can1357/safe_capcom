@@ -1,5 +1,6 @@
 #pragma once
 #include <intrin.h>
+#include <iostream>
 #include "KernelRoutines.h"
 #include "LockedMemory.h"
 #include "CapcomLoader.h"
